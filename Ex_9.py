@@ -12,7 +12,7 @@ for i in pass_list:
     response2 = response.cookies
     response3 = requests.post("https://playground.learnqa.ru/ajax/api/check_auth_cookie",
                               cookies=response2)
-    i += i[1]
+
     if response3.text.__contains__('You are authorized'):
         print("Пароль: " + i)
         print("You are authorized")
