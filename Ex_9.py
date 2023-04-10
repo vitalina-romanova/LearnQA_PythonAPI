@@ -16,4 +16,5 @@ for i in pass_list:
     if response3.text.__contains__('You are authorized'):
         print("Пароль: " + i)
         print("You are authorized")
-    else: print("You are NOT authorized")
+    else:
+        print("You are NOT authorized")
